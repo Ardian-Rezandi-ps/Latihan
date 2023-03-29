@@ -25,7 +25,13 @@ namespace Cainos.PixelArtTopDown_Basic
         
         private void FixedUpdate()
         {
-            Vector2 dir = Vector2.zero;
+
+            animator.SetFloat("movX",variableJoystick.Horizontal);
+            animator.SetFloat("movY",variableJoystick.Vertical);
+            Vector2 joystikV2= new Vector2(variableJoystick.Horizontal,variableJoystick.Vertical);
+            animator.SetFloat("speed",joystikV2.sqrMagnitude);
+             GetComponent<Rigidbody2D>().velocity = speed * joystikV2;
+           // Vector2 dir = Vector2.zero;
            /* if (Input.GetKey(KeyCode.A))
             {
                 dir.x = -1;
@@ -47,7 +53,7 @@ namespace Cainos.PixelArtTopDown_Basic
                 dir.y = -1;
                 animator.SetInteger("Direction", 0);
             }
-                */
+                
 //            print("X="+variableJoystick.Horizontal+"|| Y="+variableJoystick.Vertical) ;
           float arahY=0;
           float arahX=0;
@@ -86,6 +92,7 @@ namespace Cainos.PixelArtTopDown_Basic
             animator.SetBool("IsMoving", dir.magnitude > 0);
 
             GetComponent<Rigidbody2D>().velocity = speed * dir;
+            */
         }
     }
 }
