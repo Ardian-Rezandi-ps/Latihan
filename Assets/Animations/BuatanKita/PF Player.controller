@@ -32,7 +32,7 @@ AnimatorStateMachine:
     m_Position: {x: -1330, y: 40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1305585820296896571}
-    m_Position: {x: -800, y: 30, z: 0}
+    m_Position: {x: -830, y: 80, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -123,7 +123,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Movement
-  m_Speed: 1
+  m_Speed: 0.3
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 2884932203137236321}
@@ -370,7 +370,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: idle bawah
+  m_Name: idle Hadap
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
